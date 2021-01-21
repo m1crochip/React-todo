@@ -1,12 +1,21 @@
-import styles from './App.css';
+import './App.css';
+import { BrowserRouter,Switch,Route} from 'react-router-dom'
+
+import { Navbar } from './components/Navbar'
+import {HomePage} from './page/HomePage'
+import {TodoPage} from './page/TodoPage'
 
 function App() {
   return (
-    <div>
-      <div className={styles.navbar}>
-        <div></div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={HomePage}></Route>
+          <Route path = "/todo" component={TodoPage}></Route>
+        </Switch>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
