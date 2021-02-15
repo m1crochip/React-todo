@@ -7,7 +7,7 @@ import { TodoPage } from "./page/TodoPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react-todo">
       <div className="App">
         <Navbar />
         <Switch>
