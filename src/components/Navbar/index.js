@@ -9,14 +9,14 @@ export function Navbar() {
       <ul className={styles.text}>
         <NavLink
           exact
-          to="react-todo/"
+          to="/"
           activeClassName={styles.active}
           className={styles.box}
         >
           Home
         </NavLink>
         <NavLink
-          to="react-todo/todo"
+          to="/todo"
           activeClassName={styles.active}
           className={styles.box}
         >

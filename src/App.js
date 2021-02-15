@@ -11,8 +11,8 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route exact path="react-todo/" component={HomePage}></Route>
-          <Route path="react-todo/todo" component={TodoPage}></Route>
+          <Route exact path="/" component={HomePage}></Route>
+          <Route path="/todo" component={TodoPage}></Route>
         </Switch>
       </div>
     </BrowserRouter>
