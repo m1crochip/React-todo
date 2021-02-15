@@ -1,13 +1,28 @@
 // import styles from "./Navbar.module.css";
-import React from 'react'
-// import {NavLink} from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
+import styles from "./Navbar.module.css";
 
 export function Navbar() {
-    return (
-        <nav id="nav">
-
-        </nav>
-    )
+  return (
+    <nav className={styles.navbar}>
+      <ul className={styles.text}>
+        <NavLink
+          exact
+          to="/"
+          activeClassName={styles.active}
+          className={styles.box}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/todo"
+          activeClassName={styles.active}
+          className={styles.box}
+        >
+          Todo
+        </NavLink>
+      </ul>
+    </nav>
+  );
 }
-
