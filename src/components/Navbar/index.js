@@ -15,6 +15,7 @@ export function Navbar() {
         >
           Home
         </NavLink>
+        <div></div>
         <NavLink
           to="/todo"
           activeClassName={styles.active}
